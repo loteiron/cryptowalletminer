@@ -1,5 +1,5 @@
 # cryptowalletminer
-Write for education purpose.
+Writed for education purpose.
 Bu kod eğitim amaçlı yazılmıştır.
 
 Sağda solda görülen ücretli minerlar falan vardı. 
