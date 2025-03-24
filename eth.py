@@ -58,14 +58,14 @@ async def process_address(executor):
 
 async def main():
     # ThreadPoolExecutor ile 200 threads kullan
-    executor = ThreadPoolExecutor(max_workers=300)
+    executor = ThreadPoolExecutor(max_workers=150)
     
     count = 0
     while True:
         # 200 adet paralel görev başlat
-        tasks = [process_address(executor) for _ in range(300)]
+        tasks = [process_address(executor) for _ in range(150)]
         await asyncio.gather(*tasks)
-        count += 300
+        count += 150
         print(Fore.YELLOW + "Count:", count)
 
 asyncio.run(main())
